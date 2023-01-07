@@ -83,12 +83,6 @@ body {
     cursor: pointer;
 }
 
-.attribution {
-    position: absolute;
-    top:95vh;
-    width: fit-content;
-}
-
 @media screen and (max-width:600px) {
     .product {
         margin-top: 20px;
