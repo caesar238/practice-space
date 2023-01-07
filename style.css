@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    box-sizing: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.product {
+    margin: auto;
+    top:20vh;
+    position: relative;
+    width: 600px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.img-desktop {
+    width: 300px;
+    height: 450px;
+    float: left;
+    margin-right: 30px;
+    background-image: url('images/img-pro-desktop.jpg');
+    background-size: contain;
+}
+
+.prod-type {
+    margin: 20px 0 15px 0;
+    color: hsl(228, 12%, 48%);
+    font-size: 12px;
+    letter-spacing: 0.7rem;
+}
+
+.prod-name {
+    font-family: 'Fraunces', serif;
+    margin-bottom: 20px;
+}
+
+.prod-des {
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 30px;
+    margin-right: 10px;
+    line-height: 1.5;
+}
+
+.price {
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    align-items: center;
+}
+
+.origin {
+    font-family: 'Fraunces', serif;
+    color: #3D8361;
+}
+
+.sales {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    font-weight: normal;
+    height: fit-content;
+}
+
+.btn {
+    border: none;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 16px 70px;
+    border-radius: 10px;
+    background-color: #3D8361;
+    color: #fff;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #1C6758;
+    cursor: pointer;
+}
+
+.attribution {
+    position: absolute;
+    top:95vh;
+    width: fit-content;
+}
+
+@media screen and (max-width:600px) {
+    .product {
+        margin-top: 20px;
+        top:0;
+        width: 250px;
+        height: 90vh;
+    }
+    .img-desktop {
+        display: block;
+        width: 250px;
+        height: 175px;
+        background-color: aqua;
+        background-image: url('images/img-pro-mobile.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .text {
+        padding: 10px;
+    }
+
+    .product h1, h3, h4, p {
+        padding: 10px;
+    }
+
+    .prod-name {
+        font-size: 25px;
+    }
+
+    .btn {
+        display: block;
+        font-weight: 400;
+        padding: 16px 40px;
+        margin: 20px auto 0 auto;
+    }
+
+    .prod-type {
+        padding: 0 10px;
+        margin: 190px 0 0 0;
+    }
+}
